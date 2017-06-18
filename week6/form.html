@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>報名表</title>
+</head>
+<body>
+	<form action="insert.php" method="POST">
+		<fieldset>
+			<legend>個人基本資料</legend>
+			姓名：<input type="text" name="username" value="" required><br>
+			性別：<input type="radio" name="blood" value="O" required="" checked="">O型
+				<input type="radio" name="blood" value="A">A型<br>
+			通訊地址：<input type="textarea" name="address" cols="40" rows="2" required=""><br>
+			Email：<input type="email" name="email" required="">
+		</fieldset>
+		<fieldset>
+			<legend>喜歡的運動</legend>
+			<input type="radio" name="hobby" value="run">跑步<br>
+			<input type="radio" name="hobby" value="swwim">游泳<br>
+			<input type="radio" name="hobby" value="ride">單車<br>
+		</fieldset>
+		<fieldset>
+			<legend>緊急聯絡人</legend>
+			緊急聯絡人姓名：<input type="text" name="e_contactname"><br>
+			緊急連絡人電話：<input type="text" name="e_contacttel"><br>
+		</fieldset>
+		<input type="submit" name="" value="確定送出">
+		<input type="reset" value="重設">
+	</form>
+</body>
+</html>
